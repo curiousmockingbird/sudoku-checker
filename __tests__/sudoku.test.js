@@ -44,8 +44,8 @@ describe('Sudoku', () => {
     expect(sudoku.column9).toEqual([row1[8],row2[8],row3[8],row4[8],row5[8],row6[8],row7[8],row8[8],row9[8]]);
   });
 
-  test('should check if an array has repeated number', ()=> {
-    expect(sudoku.checkRepeat(row1)).toEqual("there are no repeating numbers");
+  test('should check if an array has no repeated numbers', ()=> {
+    expect(sudoku.checkRepeat(row2)).toEqual("there are no repeating numbers");
   });
 });
 
