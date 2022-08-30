@@ -27,5 +27,10 @@ describe('Sudoku', () => {
     expect(sudoku.row8).toEqual([9, 6, 8, 2, 3, 1, 5, 7, 4]);
     expect(sudoku.row9).toEqual([5, 7, 4, 9, 6, 8, 2, 3, 1]);
   });
+
+  test('should correctly create columns from the arrays in the rows', ()=>{
+    expect(sudoku.column1).toEqual([row1[0],row2[0],row3[0],row4[0],row5[0],row6[0],row7[0],row8[0],row9[0]]);
+  });
+
 });
 
