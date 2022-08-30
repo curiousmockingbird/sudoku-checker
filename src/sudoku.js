@@ -19,8 +19,11 @@ export default function Sudoku(row1, row2, row3, row4, row5, row6, row7, row8, r
   this.column9 = [row1[8],row2[8],row3[8],row4[8],row5[8],row6[8],row7[8],row8[8],row9[8]];
 }
 
-Sudoku.prototype.checkRepeat = function(row1) {
-
+Sudoku.prototype.checkRepeat = function(toCheck) {
+  const mySet = new Set(toCheck);
+  if(mySet.size !== toCheck.length){
+    return "there are repeating numbers";
+  } else {
     return "there are no repeating numbers";
-  
-}
+  }
+};
