@@ -18,3 +18,7 @@ export default function Sudoku(row1, row2, row3, row4, row5, row6, row7, row8, r
  this.column8 = [row1[7],row2[7],row3[7],row4[7],row5[7],row6[7],row7[7],row8[7],row9[7]];
  this.column9 = [row1[8],row2[8],row3[8],row4[8],row5[8],row6[8],row7[8],row8[8],row9[8]];
 }
+
+Sudoku.prototype.checkRepeat = function() {
+  
+}
