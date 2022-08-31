@@ -21,7 +21,8 @@ export default function Sudoku(row1, row2, row3, row4, row5, row6, row7, row8, r
 
 Sudoku.prototype.checkRepeat = function(toCheck) {
   const mySet = new Set(toCheck);
-  if(mySet.size !== toCheck.length){
+  console.log(mySet);
+  if(mySet.size !== toCheck.length){ //https://dev.to/will_devs/javascript-how-to-check-if-an-array-has-duplicate-values-cha
     return "there are repeating numbers";
   } else {
     return "there are no repeating numbers";

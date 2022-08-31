@@ -5,7 +5,32 @@
   <title>Sudoku Checker</title>
 </head>
 <body>
-  <h1>Sudoku Checker</h1>
+
+  <div class="container">
+    <div class="row header-row">  
+      <h1>Sudoku Checker</h1></div>
+    <div class="row content-row">
+      <form id="sudoku-form">
+        <label for="row-1">Row 1: <input type="number" min="1" max="9" name="row-1"><input type="number" min="1" max="9" name="row-1"><input type="number" min="1" max="9" name="row-1"><input type="number" min="1" max="9" name="row-1"><input type="number" min="1" max="9" name="row-1"><input type="number" min="1" max="9" name="row-1"><input type="number" min="1" max="9" name="row-1"><input type="number" min="1" max="9" name="row-1"><input type="number" min="1" max="9" name="row-1"></label><br>
+        <label for="row-2">Row 2: <input type="number" min="1" max="9" name="row-2"><input type="number" min="1" max="9" name="row-2"><input type="number" min="1" max="9" name="row-2"><input type="number" min="1" max="9" name="row-2"><input type="number" min="1" max="9" name="row-2"><input type="number" min="1" max="9" name="row-2"><input type="number" min="1" max="9" name="row-2"><input type="number" min="1" max="9" name="row-2"><input type="number" min="1" max="9" name="row-2"></label><br>
+        <label for="row-3">Row 3: <input type="number" min="1" max="9" name="row-3"><input type="number" min="1" max="9" name="row-3"><input type="number" min="1" max="9" name="row-3"><input type="number" min="1" max="9" name="row-3"><input type="number" min="1" max="9" name="row-3"><input type="number" min="1" max="9" name="row-3"><input type="number" min="1" max="9" name="row-3"><input type="number" min="1" max="9" name="row-3"><input type="number" min="1" max="9" name="row-3"></input></label><br>
+        <label for="row-4">Row 4: <input type="number" min="1" max="9" name="row-4"><input type="number" min="1" max="9" name="row-4"><input type="number" min="1" max="9" name="row-4"><input type="number" min="1" max="9" name="row-4"><input type="number" min="1" max="9" name="row-4"><input type="number" min="1" max="9" name="row-4"><input type="number" min="1" max="9" name="row-4"><input type="number" min="1" max="9" name="row-4"><input type="number" min="1" max="9" name="row-4"></input></label><br>
+        <label for="row-5">Row 5: <input type="number" min="1" max="9" name="row-5"><input type="number" min="1" max="9" name="row-5"><input type="number" min="1" max="9" name="row-5"><input type="number" min="1" max="9" name="row-5"><input type="number" min="1" max="9" name="row-5"><input type="number" min="1" max="9" name="row-5"><input type="number" min="1" max="9" name="row-5"><input type="number" min="1" max="9" name="row-5"><input type="number" min="1" max="9" name="row-5"></input></label><br>
+        <label for="row-6">Row 6: <input type="number" min="1" max="9" name="row-6"><input type="number" min="1" max="9" name="row-6"><input type="number" min="1" max="9" name="row-6"><input type="number" min="1" max="9" name="row-6"><input type="number" min="1" max="9" name="row-6"><input type="number" min="1" max="9" name="row-6"><input type="number" min="1" max="9" name="row-6"><input type="number" min="1" max="9" name="row-6"><input type="number" min="1" max="9" name="row-6"></input></label><br>
+        <label for="row-7">Row 7: <input type="number" min="1" max="9" name="row-7"><input type="number" min="1" max="9" name="row-7"><input type="number" min="1" max="9" name="row-7"><input type="number" min="1" max="9" name="row-7"><input type="number" min="1" max="9" name="row-7"><input type="number" min="1" max="9" name="row-7"><input type="number" min="1" max="9" name="row-7"><input type="number" min="1" max="9" name="row-7"><input type="number" min="1" max="9" name="row-7"></input></label><br>
+        <label for="row-8">Row 8: <input type="number" min="1" max="9" name="row-8"><input type="number" min="1" max="9" name="row-8"><input type="number" min="1" max="9" name="row-8"><input type="number" min="1" max="9" name="row-8"><input type="number" min="1" max="9" name="row-8"><input type="number" min="1" max="9" name="row-8"><input type="number" min="1" max="9" name="row-8"><input type="number" min="1" max="9" name="row-8"><input type="number" min="1" max="9" name="row-8"></input></label><br>
+        <label for="row-9">Row 9: <input type="number" min="1" max="9" name="row-9"><input type="number" min="1" max="9" name="row-9"><input type="number" min="1" max="9" name="row-9"><input type="number" min="1" max="9" name="row-9"><input type="number" min="1" max="9" name="row-9"><input type="number" min="1" max="9" name="row-9"><input type="number" min="1" max="9" name="row-9"><input type="number" min="1" max="9" name="row-9"><input type="number" min="1" max="9" name="row-9"></input></label><br>
+        <button type="submit" id="submit-button">Submit!</button>
+      </form>
+    </div>
+    <div id="result-div" class="hidden">
+      <h3><span id="illegal-results"></span></h3>
+      <h3><span id="results-pass"></span></h3>
+    </div>
+    <div class="row footer-row"></div>
+  </div>
+
+
   <script type="text/javascript" src="bundle.js"></script>
 </body>
 </html>
